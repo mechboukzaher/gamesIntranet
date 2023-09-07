@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update airdrops set descriptionindetails='{{inp_description.text}}'\nwhere id={{Airdrops.triggeredRow.id}}",
+      "body": "update airdrops set descriptionindetails='{{RichTextEditor1.text}}'\nwhere id={{Airdrops.triggeredRow.id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,7 +37,7 @@
     "messages": [],
     "jsonPathKeys": [
       "Airdrops.triggeredRow.id",
-      "inp_description.text"
+      "RichTextEditor1.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

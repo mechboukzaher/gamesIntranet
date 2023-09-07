@@ -1,2 +1,2 @@
-update airdrops set descriptionindetails='{{inp_description.text}}'
+update airdrops set descriptionindetails='{{RichTextEditor1.text}}'
 where id={{Airdrops.triggeredRow.id}}
