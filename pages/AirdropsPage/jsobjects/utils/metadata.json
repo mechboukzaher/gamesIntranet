@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "AirdropsPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "activeAirdrop",
+        "value": "{}"
+      },
+      {
+        "name": "activeModuleContent",
+        "value": "{}"
+      },
+      {
+        "name": "markComplete",
+        "value": "null"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "AirdropsPage_utils",
+  "deleted": false,
+  "gitSyncId": "64f8f69acdf21353d67323fb_64f9e40eb3cff3207e42036d"
+}

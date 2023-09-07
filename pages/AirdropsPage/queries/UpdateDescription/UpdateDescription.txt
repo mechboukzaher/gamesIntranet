@@ -1,0 +1,2 @@
+update airdrops set descriptionindetails='{{inp_description.text}}'
+where id={{Airdrops.triggeredRow.id}}
