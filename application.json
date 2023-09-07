@@ -11,8 +11,8 @@
   "unpublishedApplicationDetail": {
     "navigationSetting": {
       "showNavbar": true,
-      "orientation": "side",
-      "navStyle": "sidebar",
+      "orientation": "top",
+      "navStyle": "stacked",
       "position": "static",
       "itemStyle": "text",
       "colorStyle": "theme",

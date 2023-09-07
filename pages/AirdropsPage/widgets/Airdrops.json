@@ -4,7 +4,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-    "topRow": 4,
+    "topRow": 9,
     "isSortable": true,
     "onPageChange": "{{AirdropsList.run()}}",
     "type": "TABLE_WIDGET_V2",
@@ -129,10 +129,11 @@
     "dynamicPropertyPathList": [
         {"key": "primaryColumns.EditActions1.isSaveDisabled"},
         {"key": "primaryColumns.EditActions1.isDiscardDisabled"},
-        {"key": "primaryColumns.customColumn3.onClick"}
+        {"key": "primaryColumns.customColumn3.onClick"},
+        {"key": "isVisiblePagination"}
     ],
     "displayName": "Table",
-    "bottomRow": 55,
+    "bottomRow": 78,
     "columnWidthMap": {
         "customColumn1": 94,
         "customColumn2": 98,
@@ -706,7 +707,7 @@
         "customColumn1": {
             "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
             "computedValue": "",
-            "onClick": "{{deleteAirdrop.run().then(() => {\n  AirdropsList.run();\n});}}",
+            "onClick": "{{showModal('deleteAirdropMdl').then(() => {});}}",
             "isEditable": false,
             "alias": "delete",
             "enableSort": true,
@@ -1053,7 +1054,7 @@
     "key": "dps57nxxno",
     "canFreezeColumn": true,
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 63,
     "textSize": "0.875rem",
     "widgetId": "9htkqctgta",
     "allowAddNewRow": false,
@@ -1069,6 +1070,6 @@
     "isVisibleSearch": true,
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 1,
-    "isVisiblePagination": true,
+    "isVisiblePagination": "true",
     "verticalAlignment": "CENTER"
 }
