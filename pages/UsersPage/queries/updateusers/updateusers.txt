@@ -1,0 +1,2 @@
+update auth.users set email='{{Users.updatedRow.email}}'where id={{Users.updatedRow.id}}
+

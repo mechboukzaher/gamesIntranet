@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Empty Page",
-    "slug": "empty-page",
+    "name": "UsersPage",
+    "slug": "userspage",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 680,
+          "bottomRow": 600,
           "containerStyle": "none",
           "snapRows": 67,
           "parentRowSpace": 1,
@@ -25,9 +25,21 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "UsersPage_UsersList",
+              "name": "UsersList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Empty Page",
+        "id": "UsersPage",
         "deleted": false,
         "policies": [],
         "userPermissions": []
