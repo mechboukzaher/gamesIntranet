@@ -58,6 +58,6 @@
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": false,
     "iconAlign": "left",
-    "defaultText": "{{Airdrops.triggeredRow.descriptionindetails}}",
+    "defaultText": "{{Query1.data[Query1.data.findIndex((a) => a.projectname === Airdrops.triggeredRow.projectname)].descriptionindetails}}",
     "minDynamicHeight": 4
 }
