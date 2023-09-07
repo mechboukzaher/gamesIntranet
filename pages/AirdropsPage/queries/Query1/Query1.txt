@@ -1,1 +1,1 @@
-SELECT * FROM public."airdrops" ORDER BY id ASC OFFSET {{(Airdrops.pageNo-1)*10}} limit 10;
+SELECT * FROM public."airdrops" ORDER BY id ASC 

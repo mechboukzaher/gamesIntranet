@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "--SELECT * FROM public.\"airdrops\" ORDER BY id ASC\nSELECT id,projectname,airdropurl,shortdescription,airdropendsindetails,totalvalueindetails,platformindetails,urlindetails,websiteindetails,whitepaperurlindetails,twitterindetails,telegramchannelindetails,telegramgroupindetails,discordindetails,mediumindetails,githubindetails,tickerindetails,totalsupplyindetails,coinmarketcapindetails,videourlindetails,iconurl_aws,exchangesindetails,airdropendsconverted FROM public.\"airdrops\"  ORDER BY id ASC",
+      "body": "--SELECT * FROM public.\"airdrops\" ORDER BY id ASC\nSELECT id,projectname,airdropurl,shortdescription,airdropendsindetails,totalvalueindetails,platformindetails,urlindetails,websiteindetails,whitepaperurlindetails,twitterindetails,telegramchannelindetails,telegramgroupindetails,discordindetails,mediumindetails,githubindetails,tickerindetails,totalsupplyindetails,coinmarketcapindetails,videourlindetails,iconurl_aws,exchangesindetails,airdropendsconverted FROM public.\"airdrops\"  ORDER BY id ASC OFFSET {{(Airdrops.pageNo-1)*10}} limit 10;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,11 +27,17 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "(Airdrops.pageNo-1)*10"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],

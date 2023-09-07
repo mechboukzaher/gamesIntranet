@@ -4,7 +4,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-    "topRow": 9,
+    "topRow": 5,
     "isSortable": true,
     "onPageChange": "{{AirdropsList.run()}}",
     "type": "TABLE_WIDGET_V2",
@@ -46,7 +46,8 @@
         {"key": "primaryColumns.customColumn2.computedValue"},
         {"key": "primaryColumns.customColumn3.buttonColor"},
         {"key": "primaryColumns.customColumn3.borderRadius"},
-        {"key": "primaryColumns.customColumn3.boxShadow"}
+        {"key": "primaryColumns.customColumn3.boxShadow"},
+        {"key": "totalRecordsCount"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -58,7 +59,7 @@
     "isVisible": true,
     "enableClientSideSearch": true,
     "version": 2,
-    "totalRecordsCount": "0",
+    "totalRecordsCount": "{{Query1.data.length}}",
     "tags": [
         "Suggested",
         "Display"
@@ -88,7 +89,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1694102576584,
+    "columnUpdatedAt": 1694103419392,
     "defaultSelectedRowIndices": "[\n  \n]",
     "mobileBottomRow": 39,
     "widgetName": "Airdrops",
@@ -129,7 +130,7 @@
         {"key": "isVisiblePagination"}
     ],
     "displayName": "Table",
-    "bottomRow": 78,
+    "bottomRow": 57,
     "columnWidthMap": {
         "projectname": 170,
         "iconurl": 107,
@@ -140,6 +141,7 @@
     },
     "parentRowSpace": 10,
     "hideCard": false,
+    "onPageSizeChange": "{{}}",
     "mobileRightColumn": 35,
     "parentColumnSpace": 16.75,
     "dynamicTriggerPathList": [
@@ -148,7 +150,8 @@
         {"key": "primaryColumns.customColumn1.onClick"},
         {"key": "primaryColumns.EditActions1.onSave"},
         {"key": "primaryColumns.customColumn2.onClick"},
-        {"key": "primaryColumns.customColumn3.onClick"}
+        {"key": "primaryColumns.customColumn3.onClick"},
+        {"key": "onPageSizeChange"}
     ],
     "borderWidth": "1",
     "primaryColumns": {
@@ -989,10 +992,11 @@
             "verticalAlignment": "CENTER"
         }
     },
+    "defaultSearchText": "",
     "key": "dps57nxxno",
     "canFreezeColumn": true,
     "isDeprecated": false,
-    "rightColumn": 63,
+    "rightColumn": 62,
     "textSize": "0.875rem",
     "widgetId": "9htkqctgta",
     "allowAddNewRow": false,
@@ -1001,7 +1005,7 @@
     "label": "Data",
     "searchKey": "",
     "parentId": "0",
-    "serverSidePaginationEnabled": false,
+    "serverSidePaginationEnabled": true,
     "renderMode": "CANVAS",
     "mobileTopRow": 11,
     "horizontalAlignment": "CENTER",

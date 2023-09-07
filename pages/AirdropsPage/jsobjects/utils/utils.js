@@ -4,7 +4,7 @@ export default {
 	activeModuleContent: {},
 	markComplete: null,
 
-	 
+	
 
 	setActiveModule: (activeAirdrop) => {
 		this.activeAirdrop = activeAirdrop
