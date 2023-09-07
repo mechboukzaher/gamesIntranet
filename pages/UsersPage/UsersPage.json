@@ -35,6 +35,18 @@
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
+          ],
+          [
+            {
+              "id": "UsersPage_UsersList",
+              "name": "UsersList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "(Users.pageNo-1)*10"
+              ],
+              "timeoutInMillisecond": 10000
+            }
           ]
         ],
         "layoutOnLoadActionErrors": [],
