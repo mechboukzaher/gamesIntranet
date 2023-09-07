@@ -3,6 +3,10 @@
     {
       "id": "AirdropsPage",
       "isDefault": true
+    },
+    {
+      "id": "Empty Page",
+      "isDefault": false
     }
   ],
   "viewMode": false,
