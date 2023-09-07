@@ -1,0 +1,1 @@
+delete from airdrops where id ={{Airdrops.triggeredRow.id}}
