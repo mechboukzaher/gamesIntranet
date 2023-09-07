@@ -58,7 +58,7 @@
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "isVisibleFilters": true,
     "isVisible": true,
-    "enableClientSideSearch": true,
+    "enableClientSideSearch": false,
     "version": 2,
     "totalRecordsCount": "{{Query1.data.length}}",
     "tags": [
@@ -1161,7 +1161,7 @@
     "textSize": "0.875rem",
     "widgetId": "tngq45gid9",
     "minWidth": 450,
-    "tableData": "{{UsersList.data}}",
+    "tableData": "{{Query1.data}}",
     "label": "Data",
     "searchKey": "",
     "parentId": "0",
