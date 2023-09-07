@@ -5,6 +5,7 @@
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
     "topRow": 15,
     "isSortable": true,
+    "onPageChange": "{{UsersList.run()}}",
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
     "animateLoading": true,
@@ -46,7 +47,8 @@
         {"key": "primaryColumns.reauthentication_token.computedValue"},
         {"key": "primaryColumns.reauthentication_sent_at.computedValue"},
         {"key": "primaryColumns.is_sso_user.computedValue"},
-        {"key": "primaryColumns.deleted_at.computedValue"}
+        {"key": "primaryColumns.deleted_at.computedValue"},
+        {"key": "totalRecordsCount"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -58,7 +60,7 @@
     "isVisible": true,
     "enableClientSideSearch": true,
     "version": 2,
-    "totalRecordsCount": 0,
+    "totalRecordsCount": "{{Query1.data.length}}",
     "tags": [
         "Suggested",
         "Display"
@@ -137,7 +139,7 @@
     "hideCard": false,
     "mobileRightColumn": 46,
     "parentColumnSpace": 19.8125,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onPageChange"}],
     "borderWidth": "1",
     "primaryColumns": {
         "email_change_token_current": {
@@ -1163,6 +1165,7 @@
     "label": "Data",
     "searchKey": "",
     "parentId": "0",
+    "serverSidePaginationEnabled": true,
     "renderMode": "CANVAS",
     "mobileTopRow": 16,
     "horizontalAlignment": "LEFT",

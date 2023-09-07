@@ -1,1 +1,1 @@
-SELECT * FROM auth."users";
+SELECT * FROM auth."users" OFFSET {{(Users.pageNo-1)*10}} limit 10;

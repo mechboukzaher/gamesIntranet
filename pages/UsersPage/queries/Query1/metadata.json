@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "UsersList",
+    "name": "Query1",
     "datasource": {
       "name": "GamesDatabase",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM auth.\"users\" OFFSET {{(Users.pageNo-1)*10}} limit 10;",
+      "body": "SELECT * FROM auth.\"users\";",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,24 +27,18 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "(Users.pageNo-1)*10"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-09-07T20:09:22Z"
+    "createdAt": "2023-09-07T20:47:19Z"
   },
-  "id": "UsersPage_UsersList",
+  "id": "UsersPage_Query1",
   "deleted": false,
-  "gitSyncId": "64f8f69acdf21353d67323fb_64fa2df257e5a11ffe7746fd"
+  "gitSyncId": "64f8f69acdf21353d67323fb_64fa36d7b3cff3207e420783"
 }
